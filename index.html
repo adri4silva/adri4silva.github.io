@@ -1,260 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-  <head>
-
+<head>
+    <meta content="Adrián Silva">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Personal CV">
-    <meta name="author" content="Adrián Silva">
+    <title>Adrián Silva</title>
+    <style>
+        /* devanagari */
+        @font-face {
+            font-family: 'Avenir Next';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Avenir Next'), local('Avenir-Next'), url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+        }
 
-    <title>Adrian Silva - Personal Resume</title>
+        /* latin-ext */
+        @font-face {
+            font-family: 'Avenir Next';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Avenir Next'), local('Avenir-Next'), url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        /* latin */
+        @font-face {
+            font-family: 'Avenir Next';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Avenir Next'), local('Avenir-Next'), url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-     <!--<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link href="vendor/devicons/new-css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        /* Base */
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+        body {
+            height: 100%;
+            transition: 1s all;
+            margin: 0 auto;
+            color: #D2DAE2;
+            background: #17191A;
 
-  </head>
+        }
 
-  <body id="page-top">
+        p {
+            font-family: 'Avenir Next', sans-serif;
+            font-weight: 600;
+            font-size: 2em;
+            margin: 0;
+        }
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Adrian Silva</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">More</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        a {
+            color: #3C40C6;
+            text-decoration: none;
+        }
 
-    <div class="container-fluid p-0">
+        /* Layout */
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Adrian
-            <span class="text-primary">Silva</span>
-          </h1>
-          <div class="subheading mb-5">Vigo, Galicia (Spain) · (+34) 669 862 010 ·
-            <a href="mailto:adri4silva@gmail.com">adri4silva@gmail.com</a>
-          </div>
-          <p class="mb-5">I'm a <b>self-taught</b> software enthusiast focused on both <b>clean code</b> and <b>good practices</b> when writting code. My avidity to learn swiftly, allows me to adapt to the most <b>trending technologies</b> and to avoid the obsolescence. I like to work in <b>team-oriented environments</b> where I can collaborate, contribute and learn from <b>cool projects.</b></p>
-          <p class="mb-5">I'm currently working as an <b>iOS Developer</b> at <b><a href="https://www.quobis.com">Quobis</a></b></p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-            </li>
-            <li class="list-inline-item">
-              <a href="https://twitter.com/adri4silva">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://linkedin.com/in/adri4silva">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/adri4silva">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="img/cv_adrian_silva.pdf">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-file-download fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        .content {
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 7% 10%;
+        }
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-          <div class="my-auto">
-            <h2 class="mb-5">Experience</h2>
-  
-            <div class="resume-item d-flex flex-column flex-md-row">
-              <div class="resume-content mr-auto">
-                <h3 class="mb-0">Quobis</h3>
-                <div class="subheading mb-3">iOS Developer</div>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">April 2018 - Current</span>
-              </div>
-            </div>
-            <div>
-              <ul>
-                <li>iOS team member, focused mainly on UI side</li>
-                <li>Responsive interfaces using code and SnapKit</li>
-                <li>Building native WebRTC apps with Swift 4.2</li>
-                <li>We develop apps using RxSwift and MVVM</li>
-                <li>Agile methodologies using: Git, Jira, Trello…</li>
-                <li>Fastlane for delivery process</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        /* Font */
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
+        .paragraphs {
+            font-size: 5em;
+            line-height: 1.2em;
+            margin-bottom: 150px;
+        }
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">KeepCoding</h3>
-              <div class="subheading mb-3">Mobile Engineering Bootcamp</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">June 2018 - Current</span>
-            </div>
-          </div>
-          <div>
-            <ul>
-              <li>Modern Mobile Architectures &amp; Paradigms: MVC, MVVM, MVP, VIPER…</li>
-              <li>Advanced Git</li>
-              <li>Introduction to Backend development with Node.js</li>
-              <li>Mobile DevOps: AWS, Linux, Docker…</li>
-              <li>iOS fundamentals: Intro to functional Swift, Swift fundamentals, TDD, DDD…</li>
-              <li>Advanced iOS: AutoLayout, RxSwift, WatchOS…</li>
-              <li>Mobile Design</li>
-              <li>Android fundamentals</li>
-              <li>Advanced Android</li>
-              <li>React for Mobile developers</li>
-              <li>Multiplatform development with React Native</li>
-            </ul>
-          </div>
+        @media (min-width: 300px) and (max-width: 720px) {
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">UNED University</h3>
-              <div class="subheading mb-3">Computer Engineering</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2016 - Current</span>
-            </div>
-          </div>
+            /* Layout */
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">CPR Daniel Castelao - Vigo</h3>
-              <div class="subheading mb-3">Higher Technician in Software Development; <b>GPA: 3.6</b></div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2016 - June 2018</span>
-            </div>
-          </div>
+            .content {
+                padding: 5% 5%;
+            }
 
-        </div>
-      </section>
+            /* Font */
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-          <div class="my-auto">
-            <h2 class="mb-5">Skills</h2>
-  
-            <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-            <ul class="list-inline list-icons">
-              <li class="list-inline-item">
-                <i class="devicon-python-plain"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicon-git-plain"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicon-swift-plain"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicon-atom-original"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicon-apple-original"></i>
-              </li>
-              <li class="list-inline-item">
-                  <i class="devicon-confluence-plain"></i>
-              </li>
-              <li class="list-inline-item">
-                  <i class="devicon-android-plain"></i>
-              </li>
-              <li class="list-inline-item">
-                  <i class="devicon-docker-plain"></i>
-              </li>
-            </ul>
-            <div class="subheading mb-3">Other Skills</div>
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Social &amp; Communication Skills</li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Intermediate Level of English</li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Team-Oriented Environment Work</li>
-            </ul>
-          </div>
-        </section>
+            .paragraphs {
+                font-size: 1.8em;
+                line-height: 1.4em;
+                margin-bottom: 50px;
+            }
+        }
+    </style>
+</head>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>I enjoy most of my time traveling which allows me to know other cultures, people &amp; ways of thinking. I just like to learn everything. Starting from different cultures, to new technologies. I think learning is a life procces. </p>
-          <p class="mb-0">I also spend my free time watching series like Peaky Blinders or Game of Thrones. I am a music lover. </p>
-        </div>
-      </section>
-
+<body class="body" id="boo">
+    <div class="content">
+        <p class="paragraphs">
+            ¡Hola! 👋🏻 My name is Adrián.
+            I’m an <a href="docs/cv_adrian_silva.pdf">iOS developer</a> from
+            the north-west of Spain.
+        </p>
+        <p class="paragraphs">
+            I’m focused on <a>good practices</a>,
+            clean code and clean
+            architecture  when writing code.
+        </p>
+        <p class="paragraphs">
+            I’m a team-oriented player
+            that loves to work on <a>agile</a>
+            environments.
+        </p>
+        <p class="paragraphs">
+            I often explore new
+            technologies, and make
+            cool <a href="https://github.com/adri4silva">projects</a> 🚀 with them.
+        </p>
+        <p class="paragraphs">
+            Do you want to know more
+            about <a href="https://linkedin.com/in/adri4silva">me?</a> Let’s have a <a href="mailto:adri4silva@gmail.com">chat.</a></p>
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-
-  </body>
+</body>
 
 </html>
